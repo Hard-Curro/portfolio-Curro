@@ -18,3 +18,17 @@ document.getElementById('reset-button').addEventListener('click', cambiarColores
     document.body.style.backgroundColor = '#3d3d3d';
     document.body.style.color = 'black';
   }
+  
+  function filtrarProyectos() {
+    var tecnologiaSeleccionada = document.getElementById("filtro").value;
+    var proyectos = document.getElementById("proyectos").children;
+    for (var i = 0; i < proyectos.length; i++) {
+      var proyecto = proyectos[i];
+      var tecnologias = proyecto.getAttribute("data-tecnologia");
+      if (tecnologiaSeleccionada === "todas" || tecnologias.indexOf(tecnologiaSeleccionada) !== -1) {
+        proyecto.style.display = "block";
+      } else {
+        proyecto.style.display = "none";
+      }
+    }
+  }
