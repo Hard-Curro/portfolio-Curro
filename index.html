@@ -31,11 +31,11 @@
     <!-- My scripts -->
     <script type="text/javascript" src="js/app.js" defer></script>
 
-    <!-- Icono al lado del titulo -->
-    <link rel="shortcut icon" href="media/icon/icon.png" type="image/xpng">
-
     <!-- Animated.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css%22/%3E">
+
+    <!-- Icono al lado del titulo -->
+    <link rel="shortcut icon" href="media/icon/icon.png" type="image/xpng">
 
     <!-- Titulo -->
     <title>Francisco de Paula Osuna Torres-ternero</title>
@@ -44,13 +44,20 @@
 
 <body>
     <header>
-        <img src="media/icon/Captura2.png" alt="portada" id="logo">
-        <nav class="menu">
-            <a href="#Home">Home</a>
-            <a href="#Sobre mi">Sobre mi</a>
-            <a href="#Portfolio">Portfolio</a>
-            <a href="#Contacto">Contacto</a>
-        </nav>
+        <section class="secmenu">
+            <img src="media/icon/Captura2.png" alt="portada" id="logo">
+            <nav class="menu">
+                <a href="#Home">Home</a>
+                <a href="#Sobre mi">Sobre mi</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="#Contacto">Contacto</a>
+            </nav>
+        </section>
+        <section class="botones">
+            <button id="blue-button">Azul</button>
+            <button id="green-button">Verde</button>
+            <button id="reset-button">Reset</button>
+        </section>
     </header>
     <section class="solucion2" id="Home">
         <div>
@@ -153,20 +160,21 @@
         </div>
     </section>
     <section class="seccion3">
-         <form>
-                <select name="modulo" id="modulo" class="form-control">
-                    <option value="all">All</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="javascript">JavaScrip</option>
-                </select>
-            </form>
-            <div class="contenedor">
+        <form>
+            <select name="modulo" id="modulo" class="form-control">
+                <option value="all">All</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScrip</option>
+            </select>
+        </form>
+        <div class="contenedor">
             <div class="card card1">
                 <img src="media/img/portfolio.png" alt="portfolio">
                 <h2 class="css html javascript"><strong>PORTFOLIO</strong> </h2>
                 <div class="texto">
-                    <span class="java">Esta es mi espacio personal donde podeis encontar toda mi información referente a trabajos y esperiencias. Tecnologias: HTML, CSS y JavaScript
+                    <span>Esta es mi espacio personal donde podeis encontar toda mi información referente a
+                        trabajos y esperiencias. Tecnologias: HTML, CSS y JavaScript</span>
                 </div>
             </div>
 
@@ -174,24 +182,24 @@
                 <img src="media/img/youtify.png" alt="youtify">
                 <h2 class="css html"><strong>YOUTIFY</strong></h2>
                 <div class="texto">
-                    <span class="java">Consiste en la agrupacion de dos aplicaciones de uso cotidiano como Spotify y
+                    <span>Consiste en la agrupacion de dos aplicaciones de uso cotidiano como Spotify y
                         Youtube en una unica pagina web con la intencion de usar un menor rendimiento. Tecnologias: HTML
                         y CSS</span>
 
                 </div>
             </div>
-                        <div class="card card3">
+            <div class="card card3">
                 <img src="media/img/desgravadores.png" alt="desgravadores">
                 <h2 class="css html"><strong>DESGRAVADORES SL</strong></h2>
                 <div class="texto">
-                    <span class="html">Consistia en una empresa ficticia en la cual los clientes nos donaabn dinero para
+                    <span>Consistia en una empresa ficticia en la cual los clientes nos donaabn dinero para
                         degravar. Tecnologias: HTML y CSS</span>
 
                 </div>
             </div>
-        </div>    
+        </div>
     </section>
-    <section class="solucion"  id="Contacto">
+    <section class="solucion" id="Contacto">
         <div>
             <p>a</p>
         </div>
@@ -233,7 +241,9 @@
             </form>
         </div>
     </section>
-    <footer></footer>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
