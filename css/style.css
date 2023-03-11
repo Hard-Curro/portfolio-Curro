@@ -399,9 +399,9 @@ animation-delay: 3s;
     width: 100px;
 }
 
-form:has(select > option[value="javascript"]:checked) + .contenedor .javascript,
-form:has(select > option[value="html"]:checked) + .contenedor .html,
-form:has(select > option[value="css"]:checked) + .contenedor .css {
+form:has(select > option[value="javascript"]:checked) + .container .javascript,
+form:has(select > option[value="html"]:checked) + .container .html,
+form:has(select > option[value="css"]:checked) + .container .css {
     color: red;
     animation: escala 2s;
 }
